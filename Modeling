@@ -1,1 +1,16 @@
+import matplotlib.pyplot as plt
+import numpy as np
 
+# Dados de exemplo
+tempo = np.linspace(0, 10, 100)
+memoria_visual = np.sin(tempo)
+memoria_auditiva = np.cos(tempo)
+
+# Criação do gráfico
+plt.plot(tempo, memoria_visual, label='Memória Visual')
+plt.plot(tempo, memoria_auditiva, label='Memória Auditiva')
+plt.xlabel('Tempo')
+plt.ylabel('Intensidade')
+plt.title('Continuidade da Memória e Sentidos Humanos')
+plt.legend()
+plt.show()
